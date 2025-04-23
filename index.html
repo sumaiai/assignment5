@@ -30,7 +30,7 @@
                 <div class="navbar-end">
                     <button class="btn btn-ghost btn-circle">
                         <img src="assets/checkbox.png" alt="">
-                        <h1 class="font-extrabold">0</h1>
+                        <h1 id="checkNum" class="font-extrabold">0</h1>
                     </button>
                     <button class="btn btn-ghost btn-circle">
                         <button>
@@ -55,10 +55,7 @@
                                 <button class="btn bg-blue-600 text-white mt-4 rounded-lg">Clear History</button>
                             </section>
                             <section class="h-full">
-                                <p class="bg-blue-100 p-4 text-xsm rounded-lg">hdhefjrfrjrhgbbfhe
-                                    whfedjedekdjferfk
-                                    bwhfbw
-                                    edhbejfehfbehfbef
+                                <p id="update" class="bg-blue-100 p-4 text-xsm rounded-lg">
                                 </p>
 
                             </section>
@@ -74,7 +71,7 @@
                                     </figure>
                                     <div class="card-body">
                                         <p>Task Assigned</p>
-                                        <h2 class="card-title font-bold text-2xl">00</h2>
+                                        <h2 id="task" class="card-title font-bold text-2xl">10</h2>
                                         <div class="card-actions">
 
                                         </div>
@@ -109,20 +106,41 @@
                                 <div class="card bg-blue-100">
                                     <div class="card-body">
                                         <div class="badge bg-white">ShopEase</div>
-                                        <h2 class="card-title">
+                                        <h2 id="cardInfo" class="card-title">
                                             Fix Mobile Button Issue
                                         </h2>
-                                        <p class="bg-white p-5 rounded-lg">A card component has a figure, a body part,
-                                            and inside
-                                            body
-                                            there are title
-                                            and actions parts</p>
+                                        <p class="bg-white p-5 rounded-lg">Debug using Chrome DevTools, check for
+                                            overlapping elements, and ensure onClick works properly
+                                            and ensure onClick works properly</p>
                                         <div class="card-actions justify-between">
                                             <div class="">
                                                 <p>Deadline</p>
                                                 <h3 class="font-medium">21 March 2025</h3>
                                             </div>
-                                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                            <button id="completed"
+                                                class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                            <button id="new"
+                                                class="btn bg-blue-200 text-white rounded-lg">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card bg-blue-100">
+                                    <div class="card-body">
+                                        <div class="badge bg-white">CloudSync</div>
+                                        <h2 id="cardInfo2" class="card-title">
+                                            Add Dark Mode
+                                        </h2>
+                                        <p class="bg-white p-5 rounded-lg">Store the user's preference in localStorage,
+                                            update CSS variables dynamically, and apply a smooth transition effect.</p>
+                                        <div class="card-actions justify-between">
+                                            <div class="">
+                                                <p>Deadline</p>
+                                                <h3 class="font-medium">21 March 2025</h3>
+                                            </div>
+                                            <button id="completed2"
+                                                class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                            <button id="new2"
+                                                class="btn bg-blue-200 text-white rounded-lg">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -142,27 +160,8 @@
                                                 <p>Deadline</p>
                                                 <h3 class="font-medium">21 March 2025</h3>
                                             </div>
-                                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card bg-blue-100">
-                                    <div class="card-body">
-                                        <div class="badge bg-white">ShopEase</div>
-                                        <h2 class="card-title">
-                                            Fix Mobile Button Issue
-                                        </h2>
-                                        <p class="bg-white p-5 rounded-lg">A card component has a figure, a body part,
-                                            and inside
-                                            body
-                                            there are title
-                                            and actions parts</p>
-                                        <div class="card-actions justify-between">
-                                            <div class="">
-                                                <p>Deadline</p>
-                                                <h3 class="font-medium">21 March 2025</h3>
-                                            </div>
-                                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                            <button id="completed3"
+                                                class="btn bg-blue-600 text-white rounded-lg">Completed</button>
                                         </div>
                                     </div>
                                 </div>
@@ -239,6 +238,7 @@
 
     </footer>
 
+    <script src="script/script.js"></script>
 </body>
 
 </html>
